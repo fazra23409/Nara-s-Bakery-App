@@ -1,1 +1,988 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:paddingBottom="0dp">
+    <LinearLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#74512D"
+            android:orientation="vertical"
+            android:elevation="8dp">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:padding="10dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/logo2"
+                    android:contentDescription="Holland Bakery Logo" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nara's Bakery"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/c1" />
+
+                <ImageView
+                    android:id="@+id/cart_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_add_shopping_cart_24"
+                    android:contentDescription="Shopping Cart"
+                    android:layout_marginEnd="16dp"
+                    app:tint="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Categories -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:background="#F8F5E8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:textColor="#74512D"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="8dp">
+
+                    <!-- produk 1-->
+                    <LinearLayout
+                        android:id="@+id/category_danish"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="4dp">
+
+                        <ImageView
+                            android:layout_width="79dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/danish_coklat"
+                            android:contentDescription="Bread" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Danish Coklat"
+                            android:textColor="#74512D"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingTop="4dp" />
+                    </LinearLayout>
+
+                    <!-- produk2 -->
+                    <LinearLayout
+                        android:id="@+id/category_croissant"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="4dp">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/croisant2"
+                            android:contentDescription="Croissant" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Croissant"
+                            android:textColor="#74512D"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingTop="4dp" />
+                    </LinearLayout>
+
+                    <!-- produk3 -->
+                    <LinearLayout
+                        android:id="@+id/category_soes"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="4dp">
+
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_height="59dp"
+                            android:src="@drawable/soes"
+                            android:contentDescription="Soes" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Soes"
+                            android:textColor="#74512D"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingTop="4dp" />
+                    </LinearLayout>
+
+                    <!-- produk4 -->
+                    <LinearLayout
+                        android:id="@+id/category_cookies"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="4dp">
+
+                        <ImageView
+                            android:layout_width="81dp"
+                            android:layout_height="62dp"
+                            android:src="@drawable/cookies"
+                            android:contentDescription="Cookies" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cookies"
+                            android:textColor="#74512D"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingTop="4dp" />
+                    </LinearLayout>
+
+                    <!-- produk5 -->
+                    <LinearLayout
+                        android:id="@+id/category_cake"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="4dp">
+
+                        <ImageView
+                            android:layout_width="85dp"
+                            android:layout_height="68dp"
+                            android:src="@drawable/chocolate_brownies"
+                            android:contentDescription="Chocolate Cake" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chocolate Cake"
+                            android:textColor="#74512D"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingTop="4dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <!-- Banner -->
+        <LinearLayout android:id="@+id/promo_banner_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#F8F5E8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Special Offers"
+            android:textColor="#74512D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:paddingBottom="8dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/promo_banner">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Weekend Special!"
+                        android:textColor="#74512D"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Get 20% off on all pastries"
+                        android:textColor="#74512D"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins"
+                        android:paddingTop="4dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order Now"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#74512D"
+                        app:cornerRadius="20dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/poppins" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/banner"
+                    android:contentDescription="Weekend Special Offer" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <!-- Popular Items -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#F8F5E8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Popular Items"
+            android:textColor="#74512D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:paddingBottom="10dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- produk 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/popular_item_1"
+                    android:layout_width="160dp"
+                    android:layout_height="220dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginEnd="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#F8F5E8"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bacon"
+                            android:contentDescription="Cheesy Toast" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:paddingTop="8dp"
+                            android:text="Cheesy Toast"
+                            android:textColor="#74512D"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Rp 8.000"
+                            android:textColor="#000000"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:src="@drawable/baseline_favorite_24"
+                                android:contentDescription="Rating Star"
+                                app:tint="#FFC107" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4.8"
+                                android:textColor="#7C7C7C"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/poppins"
+                                android:paddingStart="4dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/baseline_favorite_border_24"
+                                android:contentDescription="Add to Favorites"
+                                app:tint="#74512D" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- produk 2 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/popular_item_2"
+                    android:layout_width="160dp"
+                    android:layout_height="220dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginEnd="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#F8F5E8"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/sandwich"
+                            android:contentDescription="Sandwich" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:paddingTop="8dp"
+                            android:text="Sandwich"
+                            android:textColor="#74512D"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Rp 15.000"
+                            android:textColor="#000000"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:src="@drawable/baseline_favorite_24"
+                                android:contentDescription="Rating Star"
+                                app:tint="#FFC107" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4.7"
+                                android:textColor="#7C7C7C"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/poppins"
+                                android:paddingStart="4dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/baseline_favorite_border_24"
+                                android:contentDescription="Add to Favorites"
+                                app:tint="#74512D" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- produk 3-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/popular_item_3"
+                    android:layout_width="160dp"
+                    android:layout_height="220dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginEnd="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#F8F5E8"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/cake"
+                            android:contentDescription="Chocolate Cake" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:paddingTop="8dp"
+                            android:text="Strawberry Cake"
+                            android:textColor="#74512D"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Rp 45.000"
+                            android:textColor="#000000"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:src="@drawable/baseline_favorite_24"
+                                android:contentDescription="Rating Star"
+                                app:tint="#FFC107" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4.9"
+                                android:textColor="#7C7C7C"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/poppins"
+                                android:paddingStart="4dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/baseline_favorite_border_24"
+                                android:contentDescription="Add to Favorites"
+                                app:tint="#74512D" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!--                produk 4-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/popular_item_4"
+                    android:layout_width="160dp"
+                    android:layout_height="220dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginEnd="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#F8F5E8"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/loaf"
+                            android:contentDescription="Chocolate Cake" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:paddingTop="8dp"
+                            android:text="Roti Sedap"
+                            android:textColor="#74512D"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Rp 45.000"
+                            android:textColor="#000000"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:src="@drawable/baseline_favorite_24"
+                                android:contentDescription="Rating Star"
+                                app:tint="#FFC107" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5.0"
+                                android:textColor="#7C7C7C"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/poppins"
+                                android:paddingStart="4dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/baseline_favorite_border_24"
+                                android:contentDescription="Add to Favorites"
+                                app:tint="#74512D" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+        <!-- New Arrivals -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#F8F5E8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Arrivals"
+            android:textColor="#74512D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:paddingBottom="8dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- New Item 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/new_arrival_1"
+                    android:layout_width="160dp"
+                    android:layout_height="220dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginEnd="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#F8F5E8"
+                        android:padding="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/mochi"
+                                android:contentDescription="New Croissant" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="4dp"
+                                android:background="#E53935"
+                                android:fontFamily="@font/poppins"
+                                android:paddingHorizontal="4dp"
+                                android:paddingVertical="2dp"
+                                android:text="NEW"
+                                android:textColor="#000000"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                tools:ignore="ContrastCheck" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:paddingTop="8dp"
+                            android:text="Daifuku Mochi"
+                            android:textColor="#74512D"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Rp 15.000"
+                            android:textColor="#000000"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:src="@drawable/baseline_favorite_24"
+                                android:contentDescription="Rating Star"
+                                app:tint="#FFC107" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4.6"
+                                android:textColor="#7C7C7C"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/poppins"
+                                android:paddingStart="4dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/baseline_add_shopping_cart_24"
+                                android:contentDescription="Add to Cart"
+                                app:tint="#74512D" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- New Item 2 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/new_arrival_2"
+                    android:layout_width="160dp"
+                    android:layout_height="220dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginEnd="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#F8F5E8"
+                        android:padding="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/redvelvet"
+                                android:contentDescription="New Cake" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="4dp"
+                                android:background="#E53935"
+                                android:fontFamily="@font/poppins"
+                                android:paddingHorizontal="4dp"
+                                android:paddingVertical="2dp"
+                                android:text="NEW"
+                                android:textColor="#000000"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                tools:ignore="ContrastCheck" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:paddingTop="8dp"
+                            android:text="Red Velvet Cake"
+                            android:textColor="#74512D"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Rp 55.000"
+                            android:textColor="#000000"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:src="@drawable/baseline_favorite_24"
+                                android:contentDescription="Rating Star"
+                                app:tint="#FFC107" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+                                android:paddingStart="4dp"
+                                android:text="4.8"
+                                android:textColor="#757575"
+                                android:textSize="12sp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/baseline_add_shopping_cart_24"
+                                android:contentDescription="Add to Cart"
+                                app:tint="#74512D" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- New Item 3 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/new_arrival_3"
+                    android:layout_width="160dp"
+                    android:layout_height="220dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginEnd="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#F8F5E8"
+                        android:padding="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/mile_crepes"
+                                android:contentDescription="New Cake" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NEW"
+                                android:textColor="#FFFFFF"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/poppins"
+                                android:background="#E53935"
+                                android:paddingHorizontal="4dp"
+                                android:paddingVertical="2dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                tools:ignore="ContrastCheck"
+                                android:layout_margin="4dp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:paddingTop="8dp"
+                            android:text="Red Velvet Cake"
+                            android:textColor="#74512D"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text="Rp 55.000"
+                            android:textColor="#000000"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:src="@drawable/baseline_favorite_24"
+                                android:contentDescription="Rating Star"
+                                app:tint="#FFC107" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+                                android:paddingStart="4dp"
+                                android:text="4.8"
+                                android:textColor="#757575"
+                                android:textSize="12sp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/baseline_add_shopping_cart_24"
+                                android:contentDescription="Add to Cart"
+                                app:tint="#74512D" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+<!--   navigasi tombol-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF8F0"
+        app:menu="@menu/bottom_navigation_menu"
+        app:itemIconTint="@color/bottom_nav_colors"
+        app:itemTextColor="@color/bottom_nav_colors"
+        app:labelVisibilityMode="labeled"
+        android:elevation="8dp" />
+</LinearLayout>
